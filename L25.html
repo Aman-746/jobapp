@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+  <style>
+    .container {
+      border: 2px solid black;
+      background-color: rgb(184, 170, 199);
+      height: 1234px;
+    }
+
+    .box {
+      border: 2px solid red;
+      width: 150px;
+      height: 150px;
+      margin: 2px;
+      display: inline-block;
+    }
+
+    #box3 {
+      /* position changes a/c to its parent position which is container here
+      position: absolute; 
+      top: 123px;
+      left: 34px; */
+
+      /* relative position changes position of box to its original position and will leave a gap at its normal position*/
+      /* position: relative;
+      top: 34px;
+      left: 23px; */
+
+      /* fixed: fixed to the browser window
+      position: fixed;
+      right: 4px; */
+
+      /* sticky: stick to the browser window */
+      position: sticky;
+      top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+  </div>
+
+</body>
+
+</html>

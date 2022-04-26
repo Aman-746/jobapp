@@ -1,0 +1,297 @@
+<!-- this is doct type -->
+<!DOCTYPE html>
+<!-- this is html -->
+<html lang="en">
+<!-- this is head -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, html tutorials, web development">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <title>This is title</title>
+  <!-- this is how we include external css -->
+  <link rel="stylesheet" href="noob.css">
+</head>
+<!-- this is body -->
+
+<body>
+  <!-- .............................
+  5th vdo -->
+  <h1>hey man</h1>
+  <h2>hey man</h2>
+  <h3>hey man</h3>
+  <h4>hey man</h4>
+  <h5>hey man</h5>
+  <h6>hey man</h6>
+  <p>i am doing good
+    <br>
+    <hr> this is a new line
+  </p>
+  <p>i am doing good</p>
+  <p>i am doing good</p>
+  <p>i am doing good</p>
+  <p>Lorem ipsum dolor sit amet consectetur, <strong>this is strong </strong>adipisicing elit. Assumenda aut <em>this is
+      emphasized text</em> quibusdam quod, ratione quos eaque quisquam aperiam porro voluptate veritatis iusto
+    laudantium repudiandae culpa at sint amet quaerat? Unde asperiores nulla placeat numquam expedita adipisci
+    recusandae modi id pariatur obcaecati.</p>
+  <p>this is a new paragraph</p>
+  <!-- .......................... -->
+
+  <!-- 6th vdo -->
+  <a href="https://google.com" target="_blank">Go to google</a>
+  <a href="https://facebook.com" target="_blank"><br>Go to facebook</a>
+  <a href="https://twitter.com" target="_blank"><br>Go to twitter</a>
+  <a href="https://linkedin.com" target="_blank"><br>Go to Linded in</a>
+  <a href="/noob.html" target="_blank"><br>my html tutorials</a>
+  <!--we can attach internal link-->
+
+  <!-- image is not present hence alt text is shown, alt text appears when the image is not loading -->
+  <!-- <img src="nothing.jpg" alt="error image loading"> -->
+  <img src="https://source.unsplash.com/random/200x200/?coder,Bihar,nature" alt="beauty">
+  <!--random pictures will appear-->
+
+  <!-- ..........7th lect........................................ -->
+
+  <!-- tables and lists -->
+  <ul type="circle">
+    <!--types are disc,square and circle-->
+    <li>this is first item of my unordered list</li>
+
+    <ul type="square">
+      <li>this is 1st nested unordered list in list</li>
+      <li>this is 2nd nested unordered list in list</li>
+      <li>this is 3rd nested unordered list in list</li>
+    </ul>
+
+    <li>this is second item of my unordered list</li>
+    <li>this is third item of my unordered list</li>
+  </ul>
+
+  <ol type="A">
+    <!-- different types are 1,I,A,i,a-->
+    <li>this is first item of my ordered list</li>
+
+    <ol type="a">
+      <li>this is first nested ordered list </li>
+      <li>this is second nested ordered list</li>
+    </ol>
+
+    <li>this is second item of my ordered list</li>
+    <li>this is third item of my ordered list</li>
+  </ol>
+
+  <!-- tables -->
+  <h3>HTML table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Employee Id</th>
+        <th>Employee Role</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>Aman kumar</th>
+        <th>012</th>
+        <th>HR</th>
+      </tr>
+      <tr>
+        <th>Ayush kumar</th>
+        <th>014</th>
+        <th>Data analyst</th>
+      </tr>
+      <tr>
+        <th>Anand rao</th>
+        <th>017</th>
+        <th>CEO</th>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- .........................lecture 8.........................-->
+
+  <!-- Forms -->
+  <h2>This is form tutorial</h2>
+  <form action="backend.php">
+    <!--action : where data submitted basically in our backend -->
+
+    <label for="name"> Name: </label>
+    <!-- when you add label tag and put id of other input in for="...." section then after clicking on that input type that will tell you automatically to do that task -->
+    <div>
+      <input type="text" name="My name" id="name">
+    </div>
+    <br>
+
+    <div>
+      <label for="role">Role:</label>
+      <input type="text" name="My role" id="role">
+    </div>
+    <br>
+
+    <div>
+      Email: <input type="email" name="My Email">
+    </div>
+    <br>
+
+    <div>
+      Date: <input type="date" name="My date">
+    </div>
+    <br>
+
+    <div>
+      Bonus: <input type="number" name="My bonus">
+    </div>
+    <br>
+
+    <label for="checker">Are you eligible? </label>
+    <div>
+      <input type="checkbox" name="My eligibility" id="checker" checked>
+      <!--checked is used for by default check-->
+    </div>
+    <br>
+
+    <div>
+      Gender: Male <input type="radio" name="My gender"> Female <input type="radio" name="My gender"> Others <input
+        type="radio" name="My gender">
+    </div>
+    <br>
+
+    <div>
+      <label for="way">Write about yourself: </label>
+      <br><textarea name="myText" cols="30" rows="10" id="way"></textarea>
+    </div>
+    <br>
+
+    <div>
+      <label for="car">which car you have bought </label>
+      <select name="myCar" id="car">
+        <option value="BMW">BMW</option>
+        <option value="audi">Audi Q8</option>
+        <option value="mer" selected>Mercedez</option>
+      </select>
+    </div>
+    <br>
+
+    <div>
+      <input type="submit" value="Submit Now">
+    </div>
+    <br>
+
+    <div>
+      <input type="reset" value="Reset Now">
+    </div>
+
+  </form>
+
+  <!--.................... 9th lect ..........................-->
+  <h2>Inline and block elements</h2>
+
+  <strong style="border: 2px solid red;">this is a paragraph</strong> <a style="border: 2px solid blue;">this is also a
+    paragraph</a>
+  <!-- span is an inline tag -->
+  <span style="border: 2px solid red;">this is a span</span> <span style="border: 2px solid blue;">this is also a
+    span</span>
+  <!-- li,div are block line elements but img,em,span,a are inline elements -->
+  <a href="https://google.com" target="_blank">Go to google</a> <a href="https://facebook.com" target="_blank">Go to
+    facebook</a>
+
+  <!-- .......................10th lecture............................................. -->
+  <h2>Id and classes</h2>
+  <div id="mainbox" class="redbg blackBorder">
+    this is mainbox
+  </div>
+  <span class="redbg"></span>
+  <!-- . is for class and # for id -->
+  <!-- span.redbg for accessing class -->
+  <span class="redbg"></span>
+  <!-- span#mainSpan for accessing id -->
+  <span id="mainSpan"></span>
+  <div class="redbg blackBorder anotherClass"></div>
+
+  <!-- Emmet takes div tag as default -->
+  <div class="blackBorder"></div>
+
+  <!-- creating multiple classes using Emmet -->
+  <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar using Emmet-->
+  <span class="myClass myClass2 myClass3">First</span>
+  <span class="myClass myClass2 myClass3">second</span>
+  <span class="myClass myClass2 myClass3">Third</span>
+  <span class="myClass myClass2 myClass3">Fourth</span>
+
+  <!-- ......................11th lect................. -->
+  <h2>HTML entities</h2>
+  <!-- entities is used to write special characters -->
+  <div class="container">
+    <p>this is a paragraph</p>
+  </div>
+
+  <div class="container">
+    <p>this is another &nbsp; paragraph</p>
+    <!--if we need some space then we'll have to use &nbsp-->
+    <p>paragraph is written like this &lt;p&gt;</p>
+    <p>pound is written like this &pound;</p>
+    <p>copyright is written like this &copy;</p>
+    <p>Empty character is written like this &#x200B;</p>
+  </div>
+
+  <!-- ......................12th lect................. -->
+  <h2>Semantic tags </h2>
+  <details>
+    <summary>open it haha</summary>
+    Yep, Now you are enjoying it :)
+  </details>
+
+  <section>
+    <h1>WWF</h1>
+    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+      conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded
+      in 1961.</p>
+  </section>
+
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+      browser today!</p>
+  </article>
+
+  <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web
+      browser since January, 2018.</p>
+  </article>
+
+  <article>
+    <header>
+      <h1>What Does WWF Do?</h1>
+      <p>WWF's mission:</p>
+    </header>
+    <p>WWF's mission is to stop the degradation of our planet's natural environment,
+    and build a future in which humans live in harmony with nature.</p>
+  </article>
+
+  <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+
+  <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+</body>
+
+</html>

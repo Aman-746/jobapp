@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alignment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container {
+      width: 1000px;
+      border: 3px solid rgb(207, 121, 174);
+      margin: 33px auto;
+      /*auto will apply only in x direction*/
+      background-color: sandybrown;
+    }
+
+    .item {
+      border: 3px solid rgb(148, 106, 106);
+      margin: 6px 4px;
+      padding: 8px 8px;
+      background-color: #e6e8f1;
+    }
+
+    #fruit {
+      float: left;
+      width: 48%;
+    }
+
+    #computer {
+      float: left;
+      width: 48%;
+    }
+
+    #stationary {
+      /* float: left; */
+      clear: both;
+      /*no clear left and clear right is allowed here*/
+      width: 97%;
+    }
+
+    p,
+    h3 {
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+
+    h2 {
+      margin: 23px auto;
+      width: 275px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Welcome to my store</h2>
+    <div id="fruit" class="item">
+      <h3>Fruits</h3>
+      <p id="fruitspara" class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel amet harum dolorum error, est nostrum
+        nobis qui ea repellendus numquam blanditiis molestias magnam, similique facilis nulla ipsum eius necessitatibus
+        et aspernatur laborum eligendi. Odio consequatur labore quibusdam dolores obcaecati!
+      </p>
+    </div>
+    <div id="computer" class="item">
+      <h3>Computers</h3>
+      <p id="computerpara" class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel amet harum dolorum error, est nostrum
+        nobis qui ea repellendus numquam blanditiis molestias magnam, similique facilis nulla ipsum eius necessitatibus
+        et aspernatur laborum eligendi. Odio consequatur labore quibusdam dolores obcaecati!
+      </p>
+    </div>
+    <div id="stationary" class="item">
+      <h3>Stationary</h3>
+      <p id="stationarypara" class="para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel amet harum dolorum error, est nostrum
+        nobis qui ea repellendus numquam blanditiis molestias magnam, similique facilis nulla ipsum eius necessitatibus
+        et aspernatur laborum eligendi. Odio consequatur labore quibusdam dolores obcaecati!
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

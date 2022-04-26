@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo selectors and more designing</title>
+  <style>
+    .container {
+      border: 3px solid purple;
+      background-color: rgb(126, 241, 103);
+      padding: 10px;
+      margin: 10px auto;
+      width: 666px;
+    }
+    a{
+      text-decoration: none;
+    }
+    a:hover{ /*when we will bring cursor on "a" color will change to black and bg color to white*/
+      color: black;
+      background-color: white;
+    }
+    a:visited{ /*after visiting once color will be changed*/
+      background-color: yellow;
+    }
+    a:active{ /*time upto when you will click on link color will be changed for that time*/
+      background-color: blue;
+    }
+    button:hover{
+      color: white;
+    }
+    .btn{
+      background-color: crimson;
+      padding: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 13px;
+      border-radius: 6px;
+    }
+    .btn:hover{
+      background-color: cornflowerblue;
+      color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="conti">
+    <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero porro in veniam nihil laudantium doloribus,
+      praesentium rem vitae voluptatibus placeat dolor! A voluptatum, porro maiores tenetur praesentium eius assumenda?
+    </p>
+    <a href="https://yahoo.com" class="btn">Read more</a>
+    <button class="btn">Contact us</button>
+  </div>
+</body>
+
+</html>

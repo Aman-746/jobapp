@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>visibility and z-index</title>
+  <style>
+    .box{
+      width: 170px;
+      height: 170px;
+      border: 2px solid black;
+    }
+    #box1{
+      background-color: green;
+      position: relative;
+      top: 34px;
+      z-index: 84;
+    }
+    /* box will be above whose z-index is more than the box with lower z-index*/
+    #box2{
+      background-color: red;
+      position: relative;
+      top: 23px;
+      /* z-index will work only for position relative, absolute, fixed and sticky */
+      z-index: 64;
+    }
+    #box3{
+      /* visibility: hidden;  */
+      /*box will disapper but it will take its alotted space*/
+      /* display: none;  */
+      /*box3 will disappear and it will not take any space*/
+
+
+
+      background-color: blue;
+    }
+    #box4{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+</body>
+</html>

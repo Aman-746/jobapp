@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>Box Model Margin Padding</title>
+  <style>
+    /* * is universal */
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      background-color: #c2c5ef;
+    }
+    p{
+      font-family: 'Roboto Mono', monospace;
+    }
+    .container{
+      background-color: rgb(163, 184, 178);
+      border: 2px solid #262f68;
+      /* padding: 50px; */
+      /* padding-top: 69px;
+      /* padding-bottom: 69px; */
+
+      /* we can set padding top, bottom, left, right like this */ 
+      /* padding: 14px 50px 14px 50px; padding/margin : top right bottom left */
+
+      /* padding: y(top,bottom) x(left,right); */
+      padding: 14px 22px;
+      margin: 34px 19px;
+      border-radius: 23px;
+      width: 375px;
+      height: 174px;
+      /* box-sizing: border-box; */
+
+      /* margin: 6px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>How to make box</h3>
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos fuga velit neque quia maiores voluptas? Consectetur iusto reiciendis, ipsam adipisci assumenda facere!</p>
+  </div>
+  <div class="container">
+    <h3>How to make box</h3>
+    <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos fuga velit neque quia maiores voluptas? Consectetur iusto reiciendis, ipsam adipisci assumenda facere!</p>
+  </div>
+  <div class="container">
+    <h3>How to make box</h3>
+    <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos fuga velit neque quia maiores voluptas? Consectetur iusto reiciendis, ipsam adipisci assumenda facere!</p>
+  </div>
+</body>
+
+</html>
