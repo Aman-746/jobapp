@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Job Application</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="header">Job Application (Web)</div>
+      <div class="input">
+        <form>
+          <label for="fname">First name</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Enter First Name..."><br>
+        </form>
+        <form>
+          <label for="lname">Last name</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Enter Last Name...">
+        </form>
+      </div>
+      <div class="input">
+        <form>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter Email..."><br>
+        </form>
+        <div>
+          <label for="roles">Job Role</label><br>
+          <select name="roles" id="roles">
+            <option value="Job Roles">Job Roles</option>
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+            <option value="ui/ux Developer">UI/UX Developer</option>
+          </select>
+        </div>
+      </div>
+      <div class="input">
+        <form>
+          <label for="Address">Address</label><br>
+          <textarea name="Address" id="Address" cols="74" rows="3" placeholder="Enter Address"></textarea>
+        </form>
+      </div>
+      <div class="input">
+        <form>
+          <label for="City">City</label><br>
+          <input type="text" id="City" name="City" placeholder="Enter City Name...">
+        </form>
+        <form>
+          <label for="pincode">Pincode</label><br>
+          <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode Number...">
+        </form>
+      </div>
+      <div class="input">
+        <form>
+          <label for="birthday">Birthday:</label><br>
+          <input value="2022-01-10" type="date" id="birthday" name="birthday">
+        </form>
+        <form>
+          <label for="myfile">Select a file:</label><br>
+          <input type="file" id="myfile" name="myfile">
+        </form>
+      </div>
+      <div class="apply">
+        <button type="submit">Apply Now</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: grey;
+}
+
+.container{
+  max-width: 900px;
+  /* height: 100vh; */
+  /* background-color: grey; */
+  margin: 0 auto;
+
+}
+
+.content{
+  max-width: 600px;
+  /* height: 500px; */
+  background-color: white;
+  /* border: 2px solid black; */
+  box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 20px;
+}
+
+label{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input{
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+#roles{
+  width: 270px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+#Address{
+  padding: 5px;
+}
+
+input{
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 270px;
+}
+
+.apply{
+  display: flex;
+  margin-right: 20px;
+  justify-content: flex-end;
+}
+
+button{
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: red;
+  font-weight: bold;
+  border: 0px;
+  margin-bottom: 20px;
+  color: white;
+}
+
